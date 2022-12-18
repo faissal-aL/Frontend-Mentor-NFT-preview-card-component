@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    font-size: 16px;
+    font-family: Outfit;
+    background-color: hsl(217, 54%, 11%);
+}
+
+h2{
+    color: white;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+h2:hover, #creator:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+p, h4{
+    color:hsl(215, 51%, 70%);
+}
+h3{  
+    color: hsl(178, 100%, 50%);
+}
+h3,h4{
+    margin-top: 10px;
+  display: inline-flex;
+  font-size: 15px;
+ 
+}
+h4{
+    margin-left: 117px;
+   margin-right: 0px;
+}
+
+#card{  
+    margin-top: 50px;
+    background-color:  hsl(216, 50%, 16%); 
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 300px;
+ 
+}
+hr{
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+#avatar{
+    width: 27px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+#creator{
+    color: white;
+}
+#image{
+    border-radius: 10px;
+    width: 100%;
+}
+#view{
+    display: none;
+    width: 40px;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    margin-left: -20px;
+    pointer-events: none;
+}
+#image:hover + #view{
+    display: flex;
+}
+#image:hover{
+    filter: brightness(200%) opacity(0.5) drop-shadow(0 0 0 hsl(178, 100%, 50%)); 
+    cursor: pointer;
+}
+#view:hover + #image{
+    filter: opacity(0.5) drop-shadow(0 0 0 hsl(178, 100%, 50%)); 
+    cursor: pointer;
+}
+#creation,#avatar{
+   display: flex;
+}
+#creation{
+    align-items: center;
+}
